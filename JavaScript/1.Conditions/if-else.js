@@ -1,5 +1,6 @@
 /**
  * 1. Checking Voting Eligibility
+ * 
  * Update the function to return "Eligible to vote" if the age is at or above 18, otherwise return "Not eligible to vote".
  */
 function checkVotingEligibility(age) {
@@ -11,6 +12,7 @@ function checkVotingEligibility(age) {
 
 /**
  * 2. Check Number
+ * 
  * Update the function to return "Positive" if the number is greater than 0, otherwise return "Negative".
  */
 function checkNumber(num) {
@@ -21,6 +23,7 @@ function checkNumber(num) {
 }
 /**
  * 3. Check String
+ * 
  * Update the function to return "Empty string" if the string is empty, otherwise return "Non-empty string".
  */
 
@@ -32,6 +35,7 @@ function checkString(str) {
 
 /**
  * 4. Check Even/Odd
+ * 
  * Update the function to return "Even" if the number is even, otherwise return "Odd".
  */
 function checkEvenOdd(num) {
