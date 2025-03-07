@@ -67,3 +67,5 @@ git commit -m "a short message about the work you have done"
 ```
 git push
 ```
+
+5. Create a new Pull Request in the Github repository and select your branch as a 'compare' branch name.

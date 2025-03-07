@@ -39,7 +39,11 @@ function checkString(str) {
  * Update the function to return "Even" if the number is even, otherwise return "Odd".
  */
 function checkEvenOdd(num) {
-  // Write your code here
+  if (num % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
 }
 
 export { checkVotingEligibility, checkNumber, checkString, checkEvenOdd };
