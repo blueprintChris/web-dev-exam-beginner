@@ -1,0 +1,26 @@
+name: Production Test
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.9.0'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
