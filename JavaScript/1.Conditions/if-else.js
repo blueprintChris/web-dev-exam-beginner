@@ -5,8 +5,10 @@
  */
 function checkVotingEligibility(age) {
   // Write your code here
-  if (age >= 0) {
-    return '';
+  if (age >= 18) {
+    return 'Eligible to vote';
+  } else {
+    return 'Not eligible to vote';
   }
 }
 
@@ -17,8 +19,13 @@ function checkVotingEligibility(age) {
  */
 function checkNumber(num) {
   // Write your code here
-  if (num >= 0) {
-    return '';
+  if (num === 0) {
+    return 'Zero';
+  } else if (num > 0) {
+    return "Positive";
+
+  } else {
+    return 'Negative';
   }
 }
 /**
@@ -29,7 +36,12 @@ function checkNumber(num) {
 
 function checkString(str) {
   // Write your code here
-  if (str) {
+  if (str.length === 0) {
+
+    return "Empty string"
+  } else {
+    return "Non-empty string"
+
   }
 }
 
@@ -39,7 +51,11 @@ function checkString(str) {
  * Update the function to return "Even" if the number is even, otherwise return "Odd".
  */
 function checkEvenOdd(num) {
-  // Write your code here
+  if (num % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
 }
 
 export { checkVotingEligibility, checkNumber, checkString, checkEvenOdd };

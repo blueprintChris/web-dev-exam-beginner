@@ -5,9 +5,36 @@
  * Should return "Invalid day" if the day is not valid.
  */
 function getDayOfWeek(dayNumber) {
+  let day;
   switch (dayNumber) {
-    // Write your code here
+    case 1:
+      day = "monday";
+      break
+    case 2:
+      day = "tuesday";
+      break
+    case 3:
+      day = "wednesday";
+      break
+    case 4:
+      day = "thursday";
+      break
+    case 5:
+      day = "friday";
+      break
+    case 6:
+      day = "saturday";
+      break
+    case 7:
+      day = "sunday";
+      break
+    default:
+
+      day =
+        "Invalid day"
+
   }
+  return day;
 }
 
 /** 2. Grade Description
@@ -22,9 +49,31 @@ function getDayOfWeek(dayNumber) {
  * Should return "Invalid grade" if the grade is not valid.
  */
 function getGradeDescription(grade) {
+
+  let grade;
   switch (grade) {
-    //  Write your code here
+
+    case "F":
+      grade = "Fail";
+      break
+    case "D":
+      grade = "Below Average";
+      break
+    case "C":
+      grade = "Average";
+      break
+    case "B":
+      grade = "Good";
+      break
+    case "A":
+      grade = "Excellent";
+      break
+    default:
+
+      grade = "Invalid Grade"
+
   }
+  return grade;
 }
 
 /**
@@ -41,12 +90,36 @@ function getGradeDescription(grade) {
  * Should return "Invalid country code" if the country code is not valid.
  */
 function calculateShippingCost(countryCode, weight) {
+
+
   let costPerKg;
   switch (countryCode) {
-    // Write your code here
+    case "US":
+      costPerKg = 10;
+      break
+    case "CA":
+      costPerKg = 12;
+      break
+    case "MX":
+      costPerKg = 14;
+      break
+    case "UK":
+      costPerKg = 5;
+      break
+    case "AU":
+      costPerKg = 20;
+      break
+    default:
+      costPerKg = "Invalid country code";
+
+
+
+
   }
 
-  return // Here you should return the calculated shipping cost
+  return costPerKg * weight;
+
+
 }
 
 /**
@@ -70,7 +143,10 @@ function calculateShippingCost(countryCode, weight) {
  * 
  */
 function getZodiacSign(month, day) {
-  // Write your code here
+
+
+
+
 }
 
 export { getDayOfWeek, getGradeDescription, calculateShippingCost, getZodiacSign };
